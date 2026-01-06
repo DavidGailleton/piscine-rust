@@ -1,0 +1,21 @@
+[package]
+name = "module00-ex04"
+version = "0.1.0"
+edition = "2021"
+author = ["David GAILLETON"]
+description = "my answer to the fifth exercise of the first module of 42's Rust Piscine"
+publish = false
+
+[[bin]]
+name = "other"
+path = "src/other.rs"
+
+[[bin]]
+name = "test-overflows"
+path = "src/overflow.rs"
+
+[profile.no-overflows]
+inherits = "dev"
+overflow-checks = false
+
+[dependencies]
