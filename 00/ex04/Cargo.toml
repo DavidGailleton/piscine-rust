@@ -1,0 +1,18 @@
+[package]
+name = "module00-ex04"
+version = "0.1.0"
+edition = "2021"
+authors = ["dgaillet"]
+description = "my answer to the fifth exercise of the first module of 42's Rust Piscine"
+default-run = "default"
+publish = false
+
+[[bin]]
+name = "default"
+path = "src/main.rs"
+
+[[bin]]
+name = "other"
+path = "src/other.rs"
+
+[dependencies]
